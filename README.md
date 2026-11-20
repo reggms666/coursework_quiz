@@ -18,15 +18,13 @@
 npm install
 
 ## Запуск в режиме разработки
-npm run dev
-Приложение откроется по адресу http://localhost:5173
+npm run dev (приложение откроется по адресу http://localhost:5173)
 
 ## Сборка проекта
 npm run build
 
 ## Тестирование и линтинг
-npm run test
-npm run lint
+npm run test, npm run lint
 
 ### Скриншоты
 ![Главный экран](images/1.png)
