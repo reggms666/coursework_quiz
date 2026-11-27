@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Layout } from 'ui-library'
 
 import { HomePage } from './pages/HomePage'
+import { NotFoundPage } from './pages/NotFoundPage'
 import { QuizPage } from './pages/QuizPage'
 import { RecordsPage } from './pages/RecordsPage'
-import { NotFoundPage } from './pages/NotFoundPage'
 
 const App = () => {
   return (
