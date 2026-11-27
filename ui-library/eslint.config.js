@@ -25,7 +25,7 @@ export default tseslint.config(
     settings: {
       react: { version: 'detect' }
     },
-    rules: {
+        rules: {
       ...react.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
@@ -34,8 +34,11 @@ export default tseslint.config(
       'indent': ['error', 2],
       'semi': ['error', 'never'],
       'quotes': ['error', 'single'],
-      'no-multiple-empty-lines': ['error', { max: 1 }],
+      
+      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
       'padded-blocks': ['error', 'never'],
+      'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+      
       'padding-line-between-statements': [
         'error',
         { blankLine: 'always', prev: '*', next: 'return' },
